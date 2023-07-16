@@ -1,0 +1,18 @@
+.section-map
+    position: relative
+    padding: 180px 0
+
+    &::before
+        content: "V"
+        right: calc( 50% + 555px)   //серидина экрана + половина размера container
+        transform: translate(50%, 0%)
+        @include decorNumber
+        top: 180px                  //т.к. у секции pading-top = 180px
+        line-height: 1
+
+    &__title
+        margin-bottom: 88px
+
+.map
+    height: 358px
+    background: #626262

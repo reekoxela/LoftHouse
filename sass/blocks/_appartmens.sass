@@ -1,0 +1,15 @@
+.apartmens
+    position: relative
+    &::before
+        content: "III"
+        right: calc( 50% + 555px) //серидина экрана + половина размера container
+        transform: translate(50%, 0%)
+        @include decorNumber
+
+    &__title
+        margin-bottom: 88px
+
+    &__cards
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 30px
